@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node server.js",
     "install-client": "cd front && npm install",
-    "build-client": "cd front && npm run build",
+    "build-client": "cd front && CI=false npm run build",
     "build": "npm run install-client && npm run build-client"
   },
   "keywords": [],
