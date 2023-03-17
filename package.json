@@ -1,11 +1,11 @@
 {
-  "name": "assignmentlocationpage",
+  "name": "my-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "install-client": "cd frontend && npm install",
+    "build-client": "cd frontend && npm run build",
+    "build": "npm run install-client && npm run build-client"
   },
   "keywords": [],
   "author": "",
