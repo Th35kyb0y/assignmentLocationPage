@@ -24,12 +24,15 @@ const Download = () => {
 
   // get previous uploaded file names
   useEffect(() => {
+    // if user is first time dont send api request for previous uploaded files
+ 
     fetch("http://localhost:5000/files")
       .then(res => res.json())
       .then(data => {
         setUploadedData(data);
         console.log(data);
       });
+    
   }, [data]);
 
   const handleDownload = id => {
