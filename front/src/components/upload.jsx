@@ -34,7 +34,7 @@ const [fileName,setFileName]=useState()
 const [fileID, setFileID]=useState() 
                           
   const [btnValue,setBtnVal]=useState(true)
-  const options = ['Option 1', 'Option 2', 'Option 3'];
+ 
   
     const fileInputRef = useRef(null);
   
@@ -99,6 +99,7 @@ setBtnVal(false)
   }
   else{
     alert("error in uploading file")
+    console.log(res)
   }
   }
   }
@@ -147,15 +148,16 @@ setBtnVal(false)
 
       <Grid item md={12} >
         <Grid container spacing={1}>
-          <Grid item md={6} >
-          <FormControl  fullWidth>
-  <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <Grid item md={6} sm={12} >
+          <FormControl className="formc"  fullWidth>
+  <InputLabel id="demo-simple-select-label" >Age</InputLabel >
   <Select
     labelId="demo-simple-select-label"
     id="demo-simple-select"
 
     label="Age"
-   
+
+    
   >
     <MenuItem value={10}>Ten</MenuItem>
     <MenuItem value={20}>Twenty</MenuItem>
