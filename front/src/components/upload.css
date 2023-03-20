@@ -5,7 +5,7 @@
     width: 60px;
     height: 34px;
   }
-  
+
   .switch input { 
     opacity: 0;
     width: 0;
@@ -94,5 +94,11 @@
     height: 50px;
     width: 50px;
     margin-left: 10px;
+   }
+   .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select{
+  width: 175px;
+   }
+   .css-lj0ors{
+    width: 500px;
    }
   }
