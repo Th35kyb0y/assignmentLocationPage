@@ -9,7 +9,11 @@ const Save=()=>{
 
 const dispatch= useDispatch()
     const handleSave= async ()=>{
-        
+        // if there is no file upload , disable save button func
+        if(fileIDs.length==0){
+            alert("nothing to save , please first upload files")
+        }
+        else{
         const settings={
             method:"post",
             headers:{
@@ -24,6 +28,7 @@ const dispatch= useDispatch()
     // on saving document clear all stored ids from redux store
 dispatch(saveDoc())
  }
+}
     }
 return(
     <Box sx={{
